@@ -1,11 +1,17 @@
 package common;
 
 interface CommonMethodParent {
-	final String[] cardPattern = {"スペード", "ハート", "ダイヤ", "クラブ"};
-	final String[] cardNum = {"A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"};
-	
+
 	//プレイヤーとディーラー共通
-	abstract int randomCard();
+	int randomCard();
+	int getFirstCard();
+	void setFirstCard(int firstCard);
+	int getSecondCard();
+	void setSecondCard(int secondCard);
+	int getSumNum();
+	void sumCardNum(int num);
+	int numEx10To13(int num);
+	void numExchange(int num);
 	//bj
 	//sum
 	//hit
